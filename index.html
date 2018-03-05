@@ -34,60 +34,80 @@
           <li class="cart">Корзина</li>
           <!--тут будет форма с товарами-->
         </ul>
-        <ul class="contacts">
-          <li><p class="job-time">С 10 до 20, ежедневно</p></li>
-          <li><p class="job-phone">8 812 450-25-25</p></li>
-        </ul>
+        <div class="contacts">
+          <p class="job-time">С 10 до 20, ежедневно</p>
+          <p class="job-phone">8 812 450-25-25</p>
+        </div>
       </nav>
     </header>
 
     <main class="container">
       <h1 class="visually-hidden">Магазина «Глэйси»</h1>
       <div class="slider">
-        <button type="button" name="button1"></button>
-        <button type="button" name="button2"></button>
-        <button type="button" name="button3"></button>
-      </div>
-      <a class="main-bоuth-btn" href="#">Давайте оба</a>
-      <article class="sale-1">
-        <h2>Малинка даром!</h2>
-        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a class="want-btn" href="#">Хочу варнье!</a>
-      </article>
-      <article class="sale-2">
-        <h2>Шоколадки даром!</h2>
-        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <a class="want-btn" href="#">Хочу шоколадки!</a>
-      </article>
+        <div class="slider-slide1">
+          <p class="slider-slide-title">Крем-брюле и пломбир с малиновым джемом</p>
+          <a class="main-bоuth-btn" href="#">Давайте оба</a>
+        </div>
+        <div class="slider-slide2">
+          <b class="slider-slide-title">Шоколадный пломбир и лимонный сорбет</b>
+          <a class="main-bоuth-btn" href="#">Давайте оба</a>
+        </div>
+        <div class="slider-slide3">
+          <b class="slider-slide-title">Пломбир с помадкой и клубничный щербет</b>
+          <a class="main-bоuth-btn" href="#">Давайте оба</a>
+        </div>
+        <div class="slider-btn">
+          <button type="button" name="button1"></button>
+          <button type="button" name="button2"></button>
+          <button type="button" name="button3"></button>
+        </div>
+      </div>      
+      <section class="offers">
+        <h2 class="visually-hidden"Банеры акций></h2>
+        <article class="offers-item">
+          <h2>Малинка даром!</h2>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="want-btn" href="#">Хочу варнье!</a>
+        </article>
+        <article class="offers-item">
+          <h2>Шоколадки даром!</h2>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class="want-btn" href="#">Хочу шоколадки!</a>
+        </article>
+      </section>
       <section class="best-sales">
         <h2 class="visually-hidden">Хиты продаж.</h2>
         <article class="best-sales-item">
           <img src="#" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <div class="hit-price">
-            <span>310</span><!--знак рубля--><span>/кг</span>
+            <span>310</span>&#8381;<span>/кг</span>
           </div>
           <a class="hit-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <a class="quick-view-btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="best-sales-item">
           <img src="#" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           <div class="hit-price">
-            <span>380</span><!--знак рубля--><span>/кг</span>
+            <span>380</span>&#8381;<span>/кг</span>
           </div>
           <a class="hit-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
+          <a class="quick-view-btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="best-sales-item">
           <img src="#" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <div class="hit-price">
-            <span>355</span><!--знак рубля--><span>/кг</span>
+            <span>355</span>&#8381;<span>/кг</span>
           </div>
           <a class="hit-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a class="quick-view-btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="best-sales-item">
           <img src="#" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
           <div class="hit-price">
-            <span>415</span><!--знак рубля--><span>/кг</span>
+            <span>415</span>&#8381;<span>/кг</span>
           </div>
           <a class="hit-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          <a class="quick-view-btn" href="#">Быстрый просмотр</a>
         </article>
       </section>
       <article class="about">
@@ -111,6 +131,9 @@
         <input type="text" name="e-mail" placeholder="Электронная почта">
         <button class="btn" type="button">Отправить</button>
       </section>
+      <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1333.911294737451!2d30.3230367290418!3d59.93863487987092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8gMTkvOCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sby!4v1520249286339" width="1200" height="428" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
       <section class="feedback">
         <h2 class="visually-hidden">Наш адрес</h2>
         <p>
@@ -135,15 +158,20 @@
         <a class="social-button" href="#">Вконтакте</a>
       </div>
       <div class="links">
-          <a href="#">Для поставщиков</a>
-          <a href="#">О производстве</a>
-          <a href="#">Наши документы</a>
-          <a href="#">Экологические стандарты</a>
+        <a href="#">Для поставщиков</a>
+        <a href="#">О производстве</a>
+        <a href="#">Наши документы</a>
+        <a href="#">Экологические стандарты</a>
       </div>
       <div class="copyright">
-          <img src="#" width="108" height="39" alt="HTML Academy" />
-          <span>Сделано в <a href="#">HTML Academy</a>© 2017</span>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"></a><img src="#" width="108" height="39" alt="HTML Academy" /><a></a>
+        <span>Сделано в <a href="#">HTML Academy</a>© 2017</span>
       </div>
     </footer>
+    <section class="modal-feedback">
+        <h2>Мы обязательно вам ответим!</h2>
+        <!-- Здесь будет форма -->
+        <span class="modal-close">x</span>
+      </section>
   </body>
 </html>

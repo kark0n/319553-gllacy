@@ -32,10 +32,29 @@
           <li class="login">Вход</li>
           <!--тут будет форма входа -->
         </ul>
-        <ul class="cart"> 
-          <li class="cart">Корзина</li>
+        <div class="cart">
           <!--тут будет форма с товарами-->
-        </ul>
+          <ul class="cart-list"> 
+            <li class="cart-full">2 товара</li>
+            <li class="cart-item>">
+              <img src="#" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+              <span class="cart-item-title">Пломбир с апельсиновым джемом</span>
+              <span class="weight">1,5 кг х</span>
+              <span class="price">200 руб.</span>
+              <span class="sum">300 руб.</span> 
+            </li>
+            <li class="cart-item>">
+              <img src="#" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+              <span class="cart-item-title">Клубничный пломбир с присыпкой из белого шоколада</span>
+              <span class="weight">1,5 кг х</span>
+              <span class="price">300 руб.</span>
+              <span class="sum">450 руб.</span> 
+            </li>            
+          </ul>
+          <hr>
+          <span class="total-price">Итого: 750 руб.</span>
+          <a class="cart-btn" href="#">Оформить заказ</a>
+        </div>        
         <ul class="contacts">
           <li><p class="job-time">С 10 до 20, ежедневно</p></li>
           <li><p class="job-phone">8 812 450-25-25</p></li>
@@ -186,14 +205,14 @@
             <a class="products-item-link" href="#">Сливочное с мятным сиропом</a>
           </article>
       </section>
-      <div class="paginator">
+      <div class="pagination">
         <a class="arrow-left" href="#">&lt;</a>
-        <ul class="paginator-list">
-          <li class="paginator-list-item"><a href="#">1</a></li>
-          <li class="paginator-list-item"><a class="paginator-list-item" href="#">2</a></li>
-          <li class="paginator-list-item"><a class="paginator-list-item" href="#">3</a></li>
-          <li class="paginator-list-item"><a class="paginator-list-item" href="#">4</a></li>
-          <li class="paginator-list-item"><a class="paginator-list-item" href="#">5</a></li>
+        <ul class="pagination-list">
+          <li class="pagination-list-item"><a href="#">1</a></li>
+          <li class="pagination-list-item"><a class="pagination-list-item" href="#">2</a></li>
+          <li class="pagination-list-item"><a class="pagination-list-item" href="#">3</a></li>
+          <li class="pagination-list-item"><a class="pagination-list-item" href="#">4</a></li>
+          <li class="pagination-list-item"><a class="pagination-list-item" href="#">5</a></li>
         </ul>
         <a class="arrow-right" href="#">&gt;</a>
       </div>
@@ -214,7 +233,7 @@
           <a href="#">Экологические стандарты</a>
       </div>
       <div class="copyright">
-          <img src="#" width="108" height="39" alt="HTML Academy" />
+          <a href="https://htmlacademy.ru/intensive/htmlcss"></a><img src="#" width="108" height="39" alt="HTML Academy" /><a></a>
           <span>Сделано в <a href="#">HTML Academy</a>© 2017</span>
       </div>
     </footer>
