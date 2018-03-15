@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси - Каталог</title>   
+    <title>HTML Academy: Глейси - Каталог</title>  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">  
   </head>
   <body>
     <header class="main-header">
@@ -31,7 +34,9 @@
         </div>
         
         <ul class="user-navigation">
-          <li class="login">Вход</li>
+          <li class="login-link">
+            <a class="login-link" href="login.html">Вход</a>
+          </li>
         </ul>
         <div class="cart">
           <ul class="cart-list"> 
@@ -57,10 +62,10 @@
           <span class="total-price">Итого: 750 руб.</span>
           <a class="cart-btn" href="#">Оформить заказ</a>
         </div>        
-        <ul class="contacts">
-          <li><p class="job-time">С 10 до 20, ежедневно</p></li>
-          <li><p class="job-phone">8 812 450-25-25</p></li>
-        </ul>
+        <div class="contacts">
+          <p class="job-time">С 10 до 20, ежедневно</p>
+          <p class="job-phone">8 812 450-25-25</p>
+        </div>
       </nav>
     </header>
     <main class="container-catalog">
