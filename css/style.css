@@ -364,7 +364,9 @@ a {
     margin: 0;
     padding: 0;
     background-image: linear-gradient(#f26843, #e74a35);
+   
     color:#ffffff;
+    vertical-align: middle;
 }
 .btn:hover,
 .btn:focus {
@@ -446,3 +448,47 @@ a {
     color:#323232;
     background-color: #ffffff;
 }
+.enter-btn {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    border: none;
+}
+.main-bоuth-btn {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 700;
+    border: none;
+}
+.want-btn {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    border: none;
+}
+.send-btn {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    border: none;
+}
+.feedback-btn {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    border: none;
+}
+.cart-btn {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    border: none;
+}
+.quick-view-btn {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    border: none;
+}
+
+  
