@@ -72,6 +72,11 @@ a {
     font-weight: 500;
     list-style: none;
 }
+.search {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
 .login-link:hover,
 .login-link:focus {
     background-color: #f8f7f4;
@@ -298,6 +303,11 @@ a {
     background-color: #f8f7f4;
     color:#323232;
 }
+.subs-e-mail {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
 .feedback {
     font-size: 14px;
     line-height: 20px;
@@ -317,7 +327,7 @@ a {
 }
 .links{
     font-size: 13px;
-    line-height: 28px;
+    line-height: 18px;
     font-weight: 400;
 }
 .links a:first-child {
@@ -359,6 +369,21 @@ a {
     line-height: 28px;
     font-weight: 500; 
     color: #323232;
+}
+.feedback-name {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400; 
+}
+.feedback-e-mail {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400; 
+}
+.feedback-text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400; 
 }
 .btn{
     margin: 0;
