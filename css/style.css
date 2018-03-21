@@ -9,6 +9,8 @@ body {
     color: #ffffff;
 
     background-color: #849d8f;
+
+ 
 }
 a {
     text-decoration: none;
@@ -518,5 +520,123 @@ a {
     font-weight: 700;
     border: none;
 }
-
+.visually-hidden {
+    position: absolute;
   
+    width: 1px;
+    height: 1px;
+  
+    clip: rect(0, 0, 0, 0);
+  }
+/* _________сетка тут будет___________ */
+/* body {
+    background-image: url('../img/gllacy-index-1200.jpg');
+    background-size: 1200px auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+} */
+.main-header {
+    margin-bottom: 75px;
+  
+    /* Временно для сетки */
+    min-height: 120px;
+    outline: 1px dotted green;
+  }
+.site-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 0;
+    outline: 1px dotted black;
+}
+.main-navigation {
+    outline: 1px dotted blue;
+    width: 1146px;
+    display: flex;
+    padding: 0 27px;
+    padding-top: 9px;
+}
+.site-logo {
+    width: 154px;
+    height: 64px;
+}
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    width:405px;
+}
+.main-search {
+    margin-left: auto;
+    padding:0;
+}
+.user-navigation {
+    width: 267px;
+    margin: 0;
+    padding: 0;
+}
+.offers {
+    margin: 0;
+    padding: 0 27px;
+    width: 1146px;
+    margin-bottom: 40px;
+    min-height: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+.offers-item-1 {
+    width: 560px;
+}
+.offers-item-2 {
+    width: 560px;
+}
+.best-sales {
+    margin: 0;
+    padding: 0 27px;
+    margin-bottom: 40px;
+    min-height: 330px;
+    display: flex;
+    justify-content: space-between;
+    outline: 1px dotted green;
+}
+.best-sales-item {
+    width: 267px;
+}
+.about {
+    margin: 0 27px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+.about-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.about-list li {
+    width: 560px;
+}
+.news-subs-wrapper {
+    margin: 0;
+    padding: 0 27px;
+    display: flex;
+    justify-content: space-between;
+    outline: 1px dotted green;
+    margin-bottom: 40px;
+}
+.news-blog {
+    width: 560px;
+}
+.subs {
+    width: 560px;
+}
+.map {
+    width: 100%;
+}
+.main-footer {
+    margin: 0;
+    padding: 0 27px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    outline: 1px dotted green;
+}
