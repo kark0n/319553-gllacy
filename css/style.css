@@ -145,6 +145,8 @@ a {
     font-weight: 700;
 }
 .breadcrumbs {
+    margin: 0;
+    padding: 0 27px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
@@ -167,10 +169,15 @@ a {
     text-align: center;
 }
 .page-tittle {
+    padding: 0 27px;
     font-size: 35px;
     line-height: 41px;
     font-weight: 700;
     color: #ffffff;
+}
+.filter {
+    padding: 0 27px;
+    margin-bottom: 40px;
 }
 .filter fieldset {
     border: none;
@@ -536,7 +543,7 @@ a {
     background-position: top center;
 } */
 .main-header {
-    margin-bottom: 75px;
+    margin-bottom: 40px;
   
     /* Временно для сетки */
     min-height: 120px;
@@ -549,7 +556,7 @@ a {
     outline: 1px dotted black;
 }
 .main-navigation {
-    outline: 1px dotted blue;
+    outline: 1px dotted red;
     width: 1146px;
     display: flex;
     padding: 0 27px;
@@ -558,20 +565,30 @@ a {
 .site-logo {
     width: 154px;
     height: 64px;
+    outline: 1px dotted red;
 }
 .site-navigation {
     margin: 0;
     padding: 0;
     width:405px;
+    outline: 1px dotted red;
+}
+.user-navigation-wrapper{
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+    outline: 1px dotted green;
 }
 .main-search {
-    margin-left: auto;
+    margin:0;
     padding:0;
+    
 }
 .user-navigation {
     width: 267px;
     margin: 0;
     padding: 0;
+    outline: 1px dotted yellow;
 }
 .offers {
     margin: 0;
@@ -609,11 +626,12 @@ a {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     
 }
 .about-list li {
-    width: 560px;
+    width: 520px;
 }
 .news-subs-wrapper {
     margin: 0;
@@ -636,7 +654,29 @@ a {
     margin: 0;
     padding: 0 27px;
     display: flex;
-    margin-top: 10px;
+    margin-top: 18px;
     justify-content: space-between;
     outline: 1px dotted green;
+}
+.link-btn {
+    text-align: center;
+}
+.products {
+    margin: 0;
+    padding: 0 27px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    outline: 1px dotted green; 
+}
+.products-item {
+    width: 267px;
+    margin-bottom: 40px;
+}
+.pagination-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    outline: 1px dotted red;
+    margin-bottom: 30px;
 }
