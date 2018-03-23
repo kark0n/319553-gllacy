@@ -142,6 +142,7 @@ a {
     height: 242px;
     margin-left: 33px;
     padding: 0px 15px;
+    display: none;
 }
   
 .cart {
@@ -181,6 +182,13 @@ a {
     line-height: 18px;
     font-weight: 700;
     color: #323232;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 0px;
+    outline: 1px dotted green;
 }
 .job-time{
     font-size: 14px;

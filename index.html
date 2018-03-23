@@ -14,51 +14,50 @@
     <div class="site-wrapper"> 
       <header class="main-header">
         <nav class="main-navigation">        
-            <img class="site-logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глэйси»">            
-            <ul class="site-navigation">
+          <img class="site-logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глэйси»">            
+          <ul class="site-navigation">
+            <li>
+              <a href="#">Каталог</a>
+              <ul class="sub-site-navigation">
+                <li><a href="#1">Новинки</a></li>
+                <li><a href="catalog.html">Сливочное</a></li>  
+                <li><a href="#3">Щербеты</a></li>
+                <li><a href="#4">Фруктовый Лёд</a></li>
+                <li><a href="#5">Мелорин</a></li>                
+              </ul>
+            </li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
+          </ul>
+          <div class="user-navigation-wrapper">
+            <div class="main-search">
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                <input class="input-field search" type="search" name="search" placeholder="Что ищем?">
+              </form>
+            </div>            
+            <ul class="user-navigation">
               <li>
-                <a href="#">Каталог</a>
-                <ul class="sub-site-navigation">
-                  <li><a href="#1">Новинки</a></li>
-                  <li><a href="catalog.html">Сливочное</a></li>  
-                  <li><a href="#3">Щербеты</a></li>
-                  <li><a href="#4">Фруктовый Лёд</a></li>
-                  <li><a href="#5">Мелорин</a></li>                
-                </ul>
+                <a class="login-link" href="login.html">Вход</a>
               </li>
-              <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">О компании</a></li>
-            </ul>
-            <div class="user-navigation-wrapper">
-              <div class="main-search">
-                <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                  <input class="input-field search" type="search" name="search" placeholder="Что ищем?">
+              <li>
+                <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+                  <input class="login-email input-field" type="email" name="email" placeholder="Электронная почта">
+                  <input class="login-password input-field" type="password" name="password" placeholder="Пароль"><br>
+                  <button class="btn enter-btn" type="submit">Войти</button>
+                  <a class="restore" href="">Забыли пароль?</a>
+                  <a class="registration" href="">Новая регистрация</a>          
                 </form>
-              </div>            
-              <ul class="user-navigation">
-                <li>
-                  <a class="login-link" href="login.html">Вход</a>
-                </li>
-                <li>
-                  <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-                    <input class="login-email input-field" type="email" name="email" placeholder="Электронная почта">
-                    <input class="login-password input-field" type="password" name="password" placeholder="Пароль"><br>
-                    <button class="btn enter-btn" type="submit">Войти</button>
-                    <a class="restore" href="">Забыли пароль?</a>
-                    <a class="registration" href="">Новая регистрация</a>          
-                  </form>
-                </li>
-              </ul>
-              <ul class="cart"> 
-                <li class="cart"><a class="cart-link" href="cart.html">Пусто</a></li>
-              </ul>
-            </div>
-            <div class="contacts">
-              <p class="job-time">С 10 до 20, ежедневно</p>
-              <p class="job-phone">8 812 450-25-25</p>
-            </div>
-            
+              </li>
+            </ul>
+            <ul class="cart"> 
+              <li class="cart"><a class="cart-link" href="cart.html">Пусто</a></li>
+            </ul>
+          </div>                   
         </nav>
+        <div class="contacts">
+          <span class="job-time">С 10 до 20, ежедневно</span>
+          <span class="job-phone">8 812 450-25-25</span>
+        </div>
       </header>
       <main>
         <h1 class="visually-hidden">Магазина «Глэйси»</h1>
