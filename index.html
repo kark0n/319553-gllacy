@@ -7,7 +7,10 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"> 
   </head>
-  <body>    
+  <body>
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">    
     <div class="site-wrapper"> 
       <header class="main-header">
         <nav class="main-navigation">        
@@ -28,7 +31,7 @@
             </ul>
             <div class="user-navigation-wrapper">
               <div class="main-search">
-                <form action="https://echo.htmlacademy.ru" method="get">
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                   <input class="input-field search" type="search" name="search" placeholder="Что ищем?">
                 </form>
               </div>            
@@ -39,7 +42,7 @@
                 <li>
                   <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
                     <input class="login-email input-field" type="email" name="email" placeholder="Электронная почта">
-                    <input class="login-password input-field" type="password" name="password" placeholder="Пароль">
+                    <input class="login-password input-field" type="password" name="password" placeholder="Пароль"><br>
                     <button class="btn enter-btn" type="submit">Войти</button>
                     <a class="restore" href="">Забыли пароль?</a>
                     <a class="registration" href="">Новая регистрация</a>          
@@ -56,10 +59,9 @@
             </div>
         </nav>
       </header>
-
       <main>
-        <!-- <h1 class="visually-hidden">Магазина «Глэйси»</h1>
-        <div class="slider">
+        <h1 class="visually-hidden">Магазина «Глэйси»</h1>
+        <!-- <div class="slider">
           <div class="slider-slide1">
             <p class="slide-title">Крем-брюле и пломбир<br>
               с малиновым джемом</p>

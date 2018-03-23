@@ -30,7 +30,7 @@
           </ul>
           <div class="user-navigation-wrapper">
             <div class="main-search">
-              <form action="https://echo.htmlacademy.ru" method="get">
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                 <input class="input-field search" type="search" name="search" placeholder="Что ищем?">
               </form>
             </div>            
@@ -92,8 +92,8 @@
           <li class="breadcrumbs-current">Сливочное</li>
         </ul>
         <h1 class="page-tittle">Сливочное мороженое</h1>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">        
+          <fieldset class="filter-sort">
             <legend>Сортировка:</legend>
             <select>
               <option value="popularity">по популярности</option>
@@ -102,11 +102,11 @@
               <option value="fat">по жирности</option>
             </select>
           </fieldset>   
-          <fieldset>
+          <fieldset class="filter-price">
             <legend>Цена: 100 руб. – 500 руб.</legend>
             <!-- форма диапазона цен-->
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-fat">
             <legend>Жирность:</legend>
             <ul class="fat-filter-list">
               <li class="fat-filter-item">
