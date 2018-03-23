@@ -48,30 +48,30 @@
                 </form>
               </li>
             </ul>
-            <div class="cart-wrapper">
-              <ul class="cart"> 
-                <li class="cart-full">2 товара</li>
-                <li class="cart-item">
-                  <button class="item-del" type="button">Удалить</button>
-                  <img src="img/ice-cream-01.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                  <span class="cart-item-title">Пломбир с апельсиновым джемом</span>
-                  <span class="weight">1,5 кг х</span>
-                  <span class="price">200 руб.</span>
-                  <span class="sum">300 руб.</span> 
-                </li>
-                <li class="cart-item">
-                  <button class="item-del" type="button">Удалить</button>
-                  <img src="img/ice-cream-03.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                  <span class="cart-item-title">Клубничный пломбир с присыпкой из белого шоколада</span>
-                  <span class="weight">1,5 кг х</span>
-                  <span class="price">300 руб.</span>
-                  <span class="sum">450 руб.</span> 
-                </li>            
-              </ul>
-              <hr>
-              <span class="total-price">Итого: 750 руб.</span>
-              <a class="btn cart-btn" href="#">Оформить заказ</a>
-            </div>        
+            <section> 
+              <span class="cart-full">2 товара</span>
+              <form class="cart-form" action="https://echo.htmlacademy.ru" method="POST">
+                <ul class="cart">
+                  <li class="cart-item">
+                    <button class="item-del" type="button">Удалить</button>
+                    <img src="img/ice-cream-01.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                    <span class="cart-item-title">Пломбир с апельсиновым джемом</span>
+                    <span class="weight">1,5 кг х <span class="price">200 руб.</span></span>                    
+                    <span class="sum">300 руб.</span> 
+                  </li>
+                  <li class="cart-item">
+                    <button class="item-del" type="button">Удалить</button>
+                    <img src="img/ice-cream-03.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    <span class="cart-item-title">Клубничный пломбир с присыпкой из белого шоколада</span>
+                    <span class="weight">1,5 кг х <span class="price">300 руб.</span></span>                    
+                    <span class="sum">450 руб.</span> 
+                  </li>            
+                </ul>
+                <hr>
+                <span class="total-price">Итого: 750 руб.</span><br>
+                <a class="btn cart-btn" href="#">Оформить заказ</a>
+              </form>
+            </section>     
             <div class="contacts">
               <p class="job-time">С 10 до 20, ежедневно</p>
               <p class="job-phone">8 812 450-25-25</p>

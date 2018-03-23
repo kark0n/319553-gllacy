@@ -86,10 +86,11 @@ a {
     border-radius: 6px;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
     position: absolute;
-    left: 403px;
+    left: 603px;
     top: 59px;
     width: 341px;
     height: 84px;
+    display: none;
 }  
 .login-link:hover,
 .login-link:focus {
@@ -105,6 +106,7 @@ a {
     top: 59px;
     width: 277px;
     height: 214px;
+    display: none;
 
 }
   
@@ -129,14 +131,26 @@ a {
     margin: 20px 15px 0 15px;
     width: 225px; 
 }
+.cart-form {
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 50%;
+    top: 59px;
+    width: 540px;
+    height: 242px;
+    margin-left: 33px;
+    padding: 0px 15px;
+}
+  
 .cart {
+    margin:0;
+    padding:0;
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
     list-style: none;
-}
-.cart-wrapper {
-    background-color:#f8f7f4;
 }
 .cart-full {
     color: #323232;
@@ -147,9 +161,20 @@ a {
     line-height: 16px;
     font-weight: 400;
     color: #323232;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.cart-item-title {
+    margin:0 12px 0 12px;
+    width: 220px;
 }
 .price {
     color:#999999;
+}
+.sum {
+    width: 70px;
+    margin-left: 20px;
 }
 .total-price{
     font-size: 15px;
@@ -573,7 +598,7 @@ a {
     margin-bottom: 40px;
   
     /* Временно для сетки */
-    min-height: 120px;
+    min-height: 100px;
     outline: 1px dotted green;
   }
 .site-wrapper {
@@ -611,7 +636,7 @@ a {
     padding:0;    
 }
 .user-navigation {
-    width: 267px;
+    width: 150px;
     margin: 0;
     padding: 0;
     outline: 1px dotted yellow;
