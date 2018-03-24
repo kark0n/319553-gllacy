@@ -44,8 +44,10 @@
                   <input class="login-email input-field" type="email" name="email" placeholder="Электронная почта">
                   <input class="login-password input-field" type="password" name="password" placeholder="Пароль"><br>
                   <button class="btn enter-btn" type="submit">Войти</button>
-                  <a class="restore" href="">Забыли пароль?</a>
-                  <a class="registration" href="">Новая регистрация</a>          
+                  <div class="login-help-wrapper">
+                    <a class="restore" href="">Забыли пароль?</a><br>
+                    <a class="registration" href="">Новая регистрация</a>   
+                  </div>       
                 </form>
               </li>
             </ul>
@@ -204,13 +206,14 @@
       <section class="modal-feedback">
         <form class="feedback-form" action="echo.htmlacademy.ru" method="POST">
           <h2>Мы обязательно вам ответим!</h2>
-          <input class="input-field feedback-name" type="text" name="name-feedback" placeholder="Как вас зовут">
-          <input class="input-field feedback-e-mail" type="email" name="email-feedback" placeholder="Ваша почта для ответа">
-          <textarea class="input-field feedbacl-text" placeholder="Напишите что-нибудь"></textarea>
-          <input class="btn send-btn" type="submit" value="Отправить">
+          <p><input class="input-field feedback-name" type="text" name="name-feedback" placeholder="Как вас зовут?"></p>
+          <p><input class="input-field feedback-e-mail" type="email" name="email-feedback" placeholder="Ваша почта для ответа?"></p>
+          <p><textarea class="input-field feedback-text" name="text-feedback" placeholder="Напишите что-нибудь..."></textarea></p>
+          <input class="btn send-btn send-feed-btn" type="submit" value="Отправить">
         </form>
         <button class="modal-close" type="button">Закрыть</button>
       </section>
+      <div class="modal-overlay"></div>
     </div>  
   </body>
 </html>

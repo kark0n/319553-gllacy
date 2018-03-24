@@ -43,11 +43,14 @@ a {
 }
   
 .sub-site-navigation{
+    margin:0;
+    padding: 0;
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
     
-    list-style: none;  
+    list-style: none; 
+    display: none; 
 }
 
 .sub-site-navigation a {
@@ -91,6 +94,7 @@ a {
     width: 341px;
     height: 84px;
     display: none;
+    
 }  
 .login-link:hover,
 .login-link:focus {
@@ -106,8 +110,10 @@ a {
     top: 59px;
     width: 277px;
     height: 214px;
-    display: none;
-
+}
+.login-help-wrapper {
+    display: inline-block;
+    margin-top: 20px;
 }
   
 .login-form a {
@@ -125,11 +131,12 @@ a {
 }
 .login-email,
 .login-password {
+    padding: 0;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-    margin: 20px 15px 0 15px;
-    width: 225px; 
+    margin: 20px 17px 0 19px;
+    width: 240px; 
 }
 .cart-form {
     background-color: #f8f7f4;
@@ -372,6 +379,7 @@ a {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
+    width: 368px;
 }
 .feedback {
     font-size: 14px;
@@ -430,6 +438,9 @@ a {
     background-color: #f8f7f4;
 }
 .feedback-form h2{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
     font-size: 24px;
     line-height: 28px;
     font-weight: 500; 
@@ -438,36 +449,39 @@ a {
 .feedback-name {
     font-size: 16px;
     line-height: 24px;
-    font-weight: 400; 
+    font-weight: 400;
+    width: 266px; 
 }
 .feedback-e-mail {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400; 
+    width: 266px;
 }
 .feedback-text {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400; 
+    width: 428px;
+    min-height: 155px;
 }
 .btn{
     margin: 0;
     padding: 0;
     background-image: linear-gradient(#f26843, #e74a35);
-   
+    vertical-align: top;
+    text-decoration: none;
     color:#ffffff;
     vertical-align: middle;
+    
 }
+ 
 .btn:hover,
 .btn:focus {
-    margin: 0;
-    padding: 0;
     background-image: linear-gradient(#f58669, #ec6f5e);
     color:#ffffff;
 }
 .btn:active {
-    margin: 0;
-    padding: 0;
     background-image: linear-gradient(#d74632, #e1603e);
     color:#fceeec;
 }
@@ -494,6 +508,7 @@ a {
     color: #323232;
 }
 .input-field {
+    box-sizing: border-box;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(178, 178, 178);
@@ -508,7 +523,6 @@ a {
     border-color: rgb(154, 154, 154);
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-    height: 42px;
 }
 .input-field:focus {
     border-style: solid;
@@ -516,7 +530,6 @@ a {
     border-color: rgb(46, 136, 228);
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-    height: 42px;
 }
 .pagination-list {
     list-style: none;
@@ -550,6 +563,7 @@ a {
     line-height: 24px;
     font-weight: 700;
     border: none;
+    margin: 20px; 
 }
 .main-bоuth-btn {
     font-size: 32px;
@@ -631,6 +645,7 @@ a {
     margin: 0;
     padding: 0;
     width:405px;
+    display: flex;
     outline: 1px dotted red;
 }
 .user-navigation-wrapper{
@@ -702,9 +717,15 @@ a {
 }
 .news-blog {
     width: 560px;
+    min-height: 220px;
 }
 .subs {
+    border-radius: 6px;
+    margin: 10px 5px;
+    padding: 0 20px;
+    padding-top: 20px;
     width: 560px;
+    min-height: 210px;
 }
 .map {
     width: 100%;
@@ -745,7 +766,50 @@ a {
     margin: 0;    
     margin-left:auto;
     display: flex;
-    outline: 1px dotted red;
+    outline: 1px dotted red;    
+}
+.modal-feedback {
+    position: fixed;
+    background-color: #f8f7f4;
+    border-radius: 10px;
+    top: 340px;
+    left: 50%;
 
-    
+    width: 428px;
+    padding: 15px 25px 25px 25px;
+    margin-left: -239px;
+    z-index: 2;
+}
+.modal-close {
+    width: 17px;
+    height: 17px;
+    font-size: 0;
+    border: 0;
+    border-style: none;
+    background-color: #f8f7f4;
+    background-image: url('../img/cross-big.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.feedback-form p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+.send-feed-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+}
+.modal-overlay {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
 }
