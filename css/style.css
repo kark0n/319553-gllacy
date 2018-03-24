@@ -110,6 +110,7 @@ a {
     top: 59px;
     width: 277px;
     height: 214px;
+    display: none;
 }
 .login-help-wrapper {
     display: inline-block;
@@ -245,11 +246,10 @@ a {
 .filter fieldset {
     border: none;
     background-color: #a9bab0;
-}
-.filter fieldset {
+    border-radius: 40px;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 500;
+    font-weight: 500;  
 }
 .filter legend {
     font-size: 14px;
@@ -486,13 +486,15 @@ a {
     color:#fceeec;
 }
 .btn-accept {
+    height: 37;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
     margin: 0;
-    padding: 0;
+    padding: 0 30px;
     border-style: solid;
     border-width: 2px;
+    border-radius: 40px;
     border-color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.188);
     color:#ffffff;
@@ -742,6 +744,63 @@ a {
 .link-btn {
     text-align: center;
 }
+.filter {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-self: stretch;   
+    align-items: flex-end;
+    margin-bottom: 15px;
+    
+    outline: 1px dotted yellow;
+}
+.fat-filter-list,
+.topping-filter-list{
+    margin: 0;
+    padding: 0;
+}
+.fat-filter-item,
+.topping-filter-item {
+ display: inline-flex;
+}
+.filter-sort {
+    margin: 0;
+    padding: 0;
+    width: 195px;
+    margin-right: 15px;
+}
+.filter-price {
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    margin-right: 15px;
+}
+.filter-fat {
+    margin: 0;
+    padding: 0;
+    width: 415px;
+    display: inline-flex;
+    margin-right: 15px;
+    padding: 0 15px;
+    padding-top: 10px;  
+}
+.Подложка {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.2;
+    position: absolute;
+    left: 469px;
+    top: 207px;
+    width: 415px;
+    height: 37px;
+    z-index: 124;
+  }
+  
+.filter-topping {
+    padding: 0;
+    width:702px;
+    margin-right: 15px;
+}
 .products {
     margin: 0;
     padding: 0 27px;
@@ -779,6 +838,7 @@ a {
     padding: 15px 25px 25px 25px;
     margin-left: -239px;
     z-index: 2;
+    display: none;
 }
 .modal-close {
     width: 17px;
