@@ -296,9 +296,11 @@ a {
 }
 .offers-item-1 {
     background-image: url("../img/bg-raspberries.jpg");
+    border-radius: 10px;
 }
 .offers-item-2 {
     background-image: url('../img/bg-chocolate.jpg');
+    border-radius: 10px;
 }
 .best-sales-item {
     font-size: 16px;
@@ -357,6 +359,7 @@ a {
 }
 .about {
     background-image: url("../img/bg-about.jpg");
+    border-radius: 10px;
 }
 .about h2 {
     font-size: 24px;
@@ -370,13 +373,20 @@ a {
     color:#323232;
 }
 .news-blog {
-    background-image: url("../img/bg-blog.jpg")
+    background-image: url("../img/bg-blog.jpg");
+    background-position: 10% 40%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
 }
 .news-blog p {
+    margin:0;
+    padding: 0;
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
     color:#323232;
+    margin-left: 20px;
+    margin-top: 18px; 
 }
 .news-blog a{
     font-size: 24px;
