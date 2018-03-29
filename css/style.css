@@ -47,10 +47,12 @@ a {
 }
 .navigation-item {
   position: relative;
+  padding-top: 8px;
+  padding-bottom: 12px;
 }
 .sub-menu {
   position: absolute;
-  top: 29px;
+  top: 37px;
   left: -7px;
   z-index: 20;
 
@@ -824,6 +826,7 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 50px;
 }
 .btn {
   display: inline-block;
@@ -1292,7 +1295,7 @@ a {
 .send-feed-btn {
   position: absolute;
   right: 25px;
-  bottom: 15px;
+  bottom: 25px;
 }
 .modal-overlay {
   position: fixed;
@@ -1308,9 +1311,6 @@ a {
 }
 .modal-open {
   display: block;
-}
-.modal-close {
-  display: none;
 }
 /* ------------- slider------------- */
 .slider {
