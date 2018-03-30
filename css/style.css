@@ -326,7 +326,7 @@ a {
   align-items: center;
   position: relative;
   margin-top: 20px;
-
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
@@ -897,18 +897,19 @@ a {
   font-size: 12px;
   line-height: 18px;
 }
-.copyright a {
+.copyright-link {
   color: #ffffff;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.copyright a:hover,
-.copyright a:focus,
+.copyright-link:hover,
+.copyright-link:focus,
 .copyright a:active {
   color: #ffbc9e;
 
   border-bottom: 1px solid rgba(255, 188, 158, 0.2);
 }
+
 .feedback-form {
   font-weight: 400;
   font-size: 16px;
@@ -1207,6 +1208,7 @@ a {
   display: flex;
   margin-left: auto;
   padding: 0;
+  position: relative;
 
 }
 .main-search {
@@ -1231,6 +1233,7 @@ a {
 
   display: block;
 }
+
 .user-navigation {
   position: relative;
 
@@ -1238,6 +1241,36 @@ a {
   margin-right: 10px;
   padding: 0;
 }
+.main-search:hover::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  display: block;
+  width: 120%;
+  height: 6px;
+  background: transparent;
+}
+.user-navigation:hover::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -20%;
+  display: block;
+  width: 120%;
+  height: 6px;
+  background: transparent;
+}
+.cart-full:hover::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right:0;
+  display: block;
+  width: 120%;
+  height: 6px;
+  background: transparent;
+}
+
 .offers {
   display: flex;
   justify-content: space-between;
