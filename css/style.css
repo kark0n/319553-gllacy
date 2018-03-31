@@ -1204,8 +1204,6 @@ a {
 
   display: block;
 }
-
-
 .main-search:hover::after {
   content: "";
   position: absolute;
@@ -1214,7 +1212,6 @@ a {
   display: block;
   width: 120%;
   height: 6px;
-
   background: transparent;
 }
 .user-navigation:hover::after {
@@ -1226,7 +1223,6 @@ a {
   display: block;
   width: 120%;
   height: 6px;
-
   background: transparent;
 }
 .cart-full:hover::after {
@@ -1234,7 +1230,6 @@ a {
   position: absolute;
   top: 30px;
   right: 0;
-
   display: block;
   width: 120%;
   height: 6px;
