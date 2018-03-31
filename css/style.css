@@ -13,9 +13,7 @@ body {
 a {
   text-decoration: none;
 }
-.navigation-link {
-  color: #ffffff;
-}
+
 .site-navigation {
   list-style: none;
   font-weight: 700;
@@ -25,7 +23,8 @@ a {
 
 .navigation-link {
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.2);   */
-  margin-right: 10px;
+  color: #ffffff;
+  margin-right: 3px;
   padding: 7px 13px;
 
   text-decoration: underline;
@@ -116,6 +115,11 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  position: relative;
+
+  margin: 0;
+  margin-right: 9px;
+  padding: 0;
 }
 .search {
   width: 309px;
@@ -140,7 +144,7 @@ a {
 }  
 .login-link {
   display: block;
-  padding: 8px 16px 8px 40px;
+  padding: 8px 16px 8px 44px;
 
   font-weight: 500;
   font-size: 14px;
@@ -221,7 +225,7 @@ a {
   width: 240px;
   margin: 20px 17px 0 19px;
   padding: 0;
-
+  
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -389,12 +393,13 @@ a {
   font-weight: 700;
   font-size: 22px;
   line-height: 24px;
+  margin-top: 4px;
 }
 .breadcrumbs {
   display: flex;
   align-items: flex-end;
   margin: 0;
-  padding: 0 27px;
+  padding: 2px 27px;
 
   list-style: none;
   font-weight: 400;
@@ -493,8 +498,6 @@ a {
   flex-wrap: wrap;
   margin: 0;
   padding: 0 27px;
-
-  outline: 1px dotted red;
 }
 .products-item {
   position: relative;
@@ -502,7 +505,7 @@ a {
   width: 267px;
   min-height: 330px;
   margin-right: 26px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 
   font-weight: 500;
   font-size: 16px;
@@ -534,7 +537,7 @@ a {
 }
 .link-btn {
   position: absolute;
-
+  top:279px;
   width: 267px;
 
   text-align: center;
@@ -582,7 +585,7 @@ a {
 .about-list li {
   position: relative;
 
-  width: 540px;
+  width: 538px;
 }
 .about-list {
   display: flex;
@@ -711,7 +714,7 @@ a {
   right: 27px;
 
   width: 253px;
-  padding: 30px 25px;
+  padding: 10px 24px 30px 24px;
 
   font-weight: 400;
   font-size: 14px;
@@ -723,15 +726,18 @@ a {
 }
 .feedback p {
   margin: 0;
-  margin-bottom: 25px;
+  margin-top: 19px;
   padding: 0;
+}
+.feedback .feedback-phone-time {
+  margin-bottom: 29px;
 }
 .adress {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
 }
-.feddback-phone {
+.feedback-phone {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -739,7 +745,7 @@ a {
 .footer-social {
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 14px 0;
 
   list-style: none;
 }
@@ -788,10 +794,10 @@ a {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
-  width: 310px;
+  width: 304px;
   margin: 0;
-  margin-left: 0;
-  padding: 0;
+  margin-right: 8px;
+  padding: 12px 0;
 
   list-style: none;
   font-weight: 400;
@@ -804,7 +810,7 @@ a {
 .firts-link-footer::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 3px;
   left: -24px;
 
   display: block;
@@ -894,6 +900,9 @@ a {
   font-size: 16px;
   line-height: 24px;
 }
+
+ /*--------------- кнопки ----------------*/
+
 .btn {
   display: inline-block;
   margin: 0;
@@ -951,6 +960,60 @@ a {
   background-color: rgb(237, 237, 237);
   box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 0.004);
 }
+.enter-btn {
+  margin: 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  border: none;
+}
+.want-btn {
+  position: absolute;
+  right: 22px;
+  bottom: 24px;
+  padding: 11px 21px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  border: none;
+}
+
+.feedback-btn {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 11px 27px;
+  border: none;
+}
+.cart-btn {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  border: none;
+}
+.quick-view-btn {
+  display: none;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  border: none;
+}
+.send-feed-btn {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
 .input-field {
   box-sizing: border-box;
   height: 44px;
@@ -962,6 +1025,7 @@ a {
   border-color: rgb(178, 178, 178);
   border-radius: 5px;
 }
+
 .input-field:hover {
   background-color: rgb(255, 255, 255);
   border-width: 2px;
@@ -1059,54 +1123,7 @@ a {
   background-position: center center;
 }
 
-.enter-btn {
-  margin: 20px;
 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-
-  border: none;
-}
-.want-btn {
-  position: absolute;
-  right: 20px;
-  bottom: 24px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-
-  border: none;
-}
-
-.feedback-btn {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-
-  border: none;
-}
-.cart-btn {
-  position: absolute;
-  right: 15px;
-  bottom: 20px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-
-  border: none;
-}
-.quick-view-btn {
-  display: none;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-
-  border: none;
-}
 
 
 .visually-hidden {
@@ -1186,13 +1203,7 @@ a {
   display: block;
 }
 
-.user-navigation {
-  position: relative;
 
-  margin: 0;
-  margin-right: 10px;
-  padding: 0;
-}
 .main-search:hover::after {
   content: "";
   position: absolute;
@@ -1241,21 +1252,21 @@ a {
 .offers-item-1 {
   position: relative;
 
-  width: 520px;
-  padding: 18px 20px;
+  width: 522px;
+  padding: 16px 19px;
 }
 .offers h2 {
   margin: 0;
   padding: 0;
 }
 .offers p {
-  margin-top: 13px;
+  margin-top: 15px;
 }
 .offers-item-2 {
   position: relative;
 
   width: 520px;
-  padding: 18px 20px;
+  padding: 16px 20px;
 }
 
 
@@ -1277,7 +1288,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 25px 27px;
+  padding: 14px 27px;
 }
 
 .filter {
@@ -1429,6 +1440,9 @@ a {
      -moz-appearance: none;
           appearance: none;
 }
+.select-sort::-ms-expand {
+  display: none;
+}
 .select-sort:hover,
 .select-sort:focus {
   height: 36px;
@@ -1494,11 +1508,7 @@ a {
   margin: 0;
   margin-bottom: 20px;
 }
-.send-feed-btn {
-  position: absolute;
-  right: 25px;
-  bottom: 25px;
-}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -1518,7 +1528,7 @@ a {
 .slider {
   position: relative;
 
-  padding-top: 279px;
+  padding-top: 275px;
 
   text-align: center;
   color: #ffffff;
@@ -1526,7 +1536,7 @@ a {
 
 .slider-list {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
   padding: 0;
 
   list-style: none;
@@ -1548,7 +1558,7 @@ a {
 
 .main-bоuth-btn {
   display: inline-block;
-  padding: 12px 44px;
+  padding: 10px 42px;
 
   font-weight: 700;
   font-size: 32px;
@@ -1579,7 +1589,7 @@ a {
 
 .slider-controls {
   position: absolute;
-  bottom: 23px;
+  bottom: 19px;
   left: 27px;
   z-index: 20;
 
@@ -1700,4 +1710,16 @@ a {
 
 .range-toggle-max {
   left: 111px;
+}
+.input-field {
+  font-weight: 700;
+}
+.input-field::placeholder {
+  font-weight: 400;
+}
+.input-field::-ms-input-placeholder {
+  font-weight: 400;
+}
+.input-field:-ms-input-placeholder {
+  font-weight: 400;
 }
