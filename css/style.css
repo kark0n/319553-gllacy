@@ -446,6 +446,7 @@ a {
 }
 .best-sales {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   min-height: 330px;
   margin: 0;
@@ -455,18 +456,22 @@ a {
 
 .best-sales-item img {
   border-radius: 134px;
+  
 }
 
 .best-sales-item {
   position: relative;
 
   width: 267px;
-
+  /* margin-right: 26px; */
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   z-index: 30;
 }
+/* .best-sales-item:nth-child(4n) {
+  margin-right: 0px;
+} */
 .product-wrapper {
   position: absolute;
   z-index: 30;
@@ -568,7 +573,9 @@ a {
   font-size: 16px;
   line-height: 22px;
 }
-
+.product-wrapper {
+  min-height: 330px;
+}
 .hit-price,
 .products-price {
   position: absolute;
