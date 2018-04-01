@@ -1228,7 +1228,7 @@ a {
   height: 6px;
   background: transparent;
 }
-.cart-full:hover::after {
+.cart-inner:hover::after {
   content: "";
   position: absolute;
   top: 30px;
@@ -1236,7 +1236,6 @@ a {
   display: block;
   width: 120%;
   height: 6px;
-
   background: transparent;
 }
 
