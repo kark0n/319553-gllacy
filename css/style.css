@@ -1628,30 +1628,30 @@ a {
   cursor: pointer;
 }
 
-#product-1:checked ~ .site-wrapper {
+.product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider-01.png");
 }
 
-#product-2:checked ~ .site-wrapper {
+.product-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("../img/slider-02.png");
 }
 
-#product-3:checked ~ .site-wrapper {
+.product-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slider-03.png");
 }
 
-#product-1:checked ~ .site-wrapper #slide1,
-#product-2:checked ~ .site-wrapper #slide2,
-#product-3:checked ~ .site-wrapper #slide3 {
+.product-1:checked ~ .site-wrapper #slide1,
+.product-2:checked ~ .site-wrapper #slide2,
+.product-3:checked ~ .site-wrapper #slide3 {
   display: block;
 }
 
-#product-1:checked ~ .site-wrapper label[for="product-1"],
-#product-2:checked ~ .site-wrapper label[for="product-2"],
-#product-3:checked ~ .site-wrapper label[for="product-3"] {
+.product-1:checked ~ .site-wrapper label[for="product-1"],
+.product-2:checked ~ .site-wrapper label[for="product-2"],
+.product-3:checked ~ .site-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
 .current {
