@@ -760,6 +760,7 @@ a {
   border: 3px solid rgba(194, 206, 199, 0.5);
   border-radius: 50%;
   opacity: 0.5;
+  cursor: pointer;
 }
 .social-btn:hover {
   border: 3px solid rgba(219, 227, 222, 0.7);
@@ -947,6 +948,7 @@ a {
   border-style: solid;
   border-color: rgb(255, 255, 255);
   border-radius: 40px;
+  cursor: pointer;
 }
 .btn-accept:hover,
 .btn-accept:focus {
@@ -1195,6 +1197,7 @@ a {
   background: rgba(255, 255, 255, 0.2) url("../img/loupe.svg") no-repeat center;
   background-size: 50%;
   border-radius: 50%;
+  cursor: pointer;
 }
 .main-search:hover {
   background: #f8f7f4 url("../img/loupe-hover.svg") no-repeat center;
@@ -1351,11 +1354,13 @@ a {
   background-position: left center;
   background-size: 22px 22px;
   opacity: 0.7;
+  cursor: pointer;
 }
 .filter-label {
   position: relative;
 
   padding-left: 32px;
+  cursor: pointer;
 }
 .filter-radio:checked + .filter-label::before {
   background-image: url("../img/radio-on.svg");
@@ -1433,10 +1438,11 @@ a {
   background-size: 11px 10px;
   border: none;
   border-radius: 40px;
-
+  cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+          
 }
 .select-sort::-ms-expand {
   display: none;
@@ -1474,13 +1480,13 @@ a {
 
 .modal-feedback {
   position: fixed;
-  top: 340px;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
 
   display: none;
   width: 428px;
-  margin-left: -239px;
   padding: 15px 25px 25px 25px;
 
   background-color: #f8f7f4;
@@ -1743,4 +1749,17 @@ a {
 }
 .input-field:-ms-input-placeholder {
   font-weight: 400;
+}
+.order-item-line {
+  display: block;
+  height: 1px;
+}
+
+.order-item-line::before {
+  content: "";
+  display: block;
+  width: auto;
+  height: 1px;
+  margin: 5px 0;
+  background: rgb(208, 209, 206);
 }
