@@ -1643,9 +1643,9 @@ a {
   background-image: url("../img/slider-03.png");
 }
 
-.product-1:checked ~ .site-wrapper #slide1,
-.product-2:checked ~ .site-wrapper #slide2,
-.product-3:checked ~ .site-wrapper #slide3 {
+.product-1:checked ~ .site-wrapper .slide1,
+.product-2:checked ~ .site-wrapper .slide2,
+.product-3:checked ~ .site-wrapper .slide3 {
   display: block;
 }
 
