@@ -152,7 +152,7 @@ a {
   color: #ffffff;
   text-decoration: none;
 
-  background-color: #a1b5aa;
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
 }
 
@@ -240,7 +240,7 @@ a {
   color: #ffffff;
   text-decoration: none;
 
-  background-color: #a1b5aa;
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
 }
 .cart-link::before {
