@@ -1044,7 +1044,7 @@ a {
 }
 .pagination {
   display: flex;
-  margin: 42px 27px 31px 0px;
+  margin: 42px 17px 31px 0px;
   padding: 0;
 }
 .footer-line {
@@ -1072,7 +1072,7 @@ a {
 
   color: white;
   text-decoration: none;
-  margin-left: 2px;
+  margin-left: 4px;
   background: rgba(255, 255, 255, 0);
   border: none;
   border-radius: 50%;
