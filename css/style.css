@@ -1608,6 +1608,19 @@ a {
   border-radius: 50%;
   cursor: pointer;
 }
+.slider-controls label:hover {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: b2c1b7;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
