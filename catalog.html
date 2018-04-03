@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси - Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="page-wrapper">
@@ -15,7 +15,7 @@
             <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глэйси»">
           </a>
           <ul class="site-navigation">
-            <li class="navigation-item">
+            <li class="navigation-item navigation-catalog-item">
               <a class="navigation-link current" href="catalog.html">Каталог</a>
               <ul class="sub-menu">
                 <li class="sub-menu-item"><a class="sub-menu-link sub-link-first" href="#1">Новинки</a></li>
@@ -44,7 +44,7 @@
                   <input class="login-password input-field" type="password" name="password" placeholder="Пароль">
                   <button class="btn enter-btn" type="submit">Войти</button>
                   <div class="login-help-wrapper">
-                    <a class="restore" href="">Забыли пароль?</a><br>
+                    <a class="restore" href="">Забыли пароль?</a>
                     <a class="registration" href="">Новая регистрация</a>
                   </div>
                 </form>
@@ -52,17 +52,17 @@
             </ul>
             <section class="cart-inner"> 
               <span class="cart-full">2 товара</span>
-              <form class="cart-form" action="https://echo.htmlacademy.ru" method="POST">
+              <div class="cart-form">
                 <ul class="cart">
                   <li class="cart-item">
-                    <button class="item-del" type="button"></button>
+                    <a class="item-del" href="#" title="Удалить продукт"><span class="visually-hidden">Удалить продукт</span></a>
                     <img src="img/ice-cream-01.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                     <span class="cart-item-title">Пломбир с апельсиновым джемом</span>
                     <span class="weight">1,5 кг х <span class="price">200 руб.</span></span>
                     <span class="sum">300 руб.</span> 
                   </li>
                   <li class="cart-item">
-                    <button class="item-del" type="button"></button>
+                    <a class="item-del" href="#" title="Удалить продукт"><span class="visually-hidden">Удалить продукт</span></a>
                     <img src="img/ice-cream-03.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
                     <span class="cart-item-title">Клубничный пломбир с присыпкой из белого шоколада</span>
                     <span class="weight">1,5 кг х <span class="price">300 руб.</span></span>
@@ -72,7 +72,7 @@
                 </ul>
                 <p class="total-price">Итого: 750 руб.</p>
                 <a class="btn cart-btn" href="#">Оформить заказ</a>
-              </form>
+              </div>
             </section>
           </div>
         </nav>
@@ -101,7 +101,7 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-sort">
             <legend>Сортировка:</legend>
-            <select class="select-sort">
+            <select  name="sorting" class="select-sort">
               <option value="popularity">по популярности</option>
               <option value="cheap-first">сначала недорогие</option>
               <option value="expensive-first">сначала дорогие</option>
@@ -178,9 +178,9 @@
                 <div class="products-price">
                   <span class="price-rub">310&#8381;</span><span>/кг</span>
                 </div>
-                <div class="link-btn">
+                <h3 class="link-btn">
                   <a class="products-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>               
-                </div>
+                </h3>
                 <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
             </div>
             </div>
@@ -192,9 +192,9 @@
                 <div class="products-price">
                   <span class="price-rub">380&#8381;</span><span>/кг</span>
                 </div>
-                <div class="link-btn">
+                <h3 class="link-btn">
                   <a class="products-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
-                </div>
+                </h3>
                 <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
               </div>
             </div>
@@ -206,9 +206,9 @@
                 <div class="products-price">
                   <span class="price-rub">355&#8381;</span><span>/кг</span>
                 </div>
-                <div class="link-btn">
+                <h3 class="link-btn">
                   <a class="products-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>                 
-                </div>
+                </h3>
                 <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
               </div>
             </div>
@@ -220,9 +220,9 @@
                 <div class="products-price">
                   <span class="price-rub">415&#8381;</span><span>/кг</span>
                 </div>
-                <div class="link-btn">
+                <h3 class="link-btn">
                   <a class="products-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-                </div>
+                </h3>
                 <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
               </div>
             </div>
@@ -234,9 +234,9 @@
                 <div class="products-price">
                   <span class="price-rub">325&#8381;</span><span>/кг</span>
                 </div>
-                <div class="link-btn">
+                <h3 class="link-btn">
                   <a class="products-link" href="#">Сливочное с брусничным джемом</a>
-                </div>
+                </h3>
                 <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
               </div>
             </div>
@@ -248,9 +248,9 @@
                 <div class="products-price">
                   <span class="price-rub">410&#8381;</span><span>/кг</span>
                 </div>
-                <div class="link-btn">
+                <h3 class="link-btn">
                   <a class="products-link" href="#">Сливочно-черничное с цельными ягодами черники</a>
-                </div>
+                </h3>
                 <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
               </div>
             </div>
@@ -262,9 +262,9 @@
                 <div class="products-price">
                   <span class="price-rub">375&#8381;</span><span>/кг</span>
                 </div>
-                <div class="link-btn">
+                <h3 class="link-btn">
                   <a class="products-link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
-                </div>
+                </h3>
                 <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
               </div>
             </div>
@@ -276,9 +276,9 @@
                 <div class="products-price">
                   <span class="price-rub">320&#8381;</span><span>/кг</span>
                 </div>
-                <div class="link-btn">
+                <h3 class="link-btn">
                   <a class="products-link" href="#">Сливочное с шоколадной стружкой</a>
-                </div>
+                </h3>
                 <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
               </div>
             </div>
@@ -290,9 +290,9 @@
                 <div class="products-price">
                   <span class="price-rub">440&#8381;</span><span>/кг</span>
                 </div>
-                <div class="link-btn">
+                <h3 class="link-btn">
                   <a class="products-link" href="#">Сливочно-ванильное с кусочками шоколада</a>
-                </div>
+                </h3>
                 <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
               </div>
             </div>
@@ -304,9 +304,9 @@
                 <div class="products-price">
                   <span class="price-rub">435&#8381;</span><span>/кг</span>
                 </div>
-                <div class="link-btn">
+                <h3 class="link-btn">
                   <a class="products-link" href="#">Сливочноe с ментоловым сиропом</a>
-                </div>
+                </h3>
                 <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
               </div>
             </div>
@@ -318,9 +318,9 @@
                   <div class="products-price">
                     <span class="price-rub">355&#8381;</span><span>/кг</span>
                   </div>
-                  <div class="link-btn">
+                  <h3 class="link-btn">
                     <a class="products-link" href="#">Сливочное с кусочками черного шоколада</a>
-                  </div>
+                  </h3>
                   <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
                 </div>
               </div>
@@ -332,9 +332,9 @@
                   <div class="products-price">
                     <span class="price-rub">420&#8381;</span><span>/кг</span>
                   </div>
-                  <div class="link-btn">
+                  <h3 class="link-btn">
                     <a class="products-link" href="#">Сливочное с мятным сиропом</a>
-                  </div>
+                  </h3>
                   <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
                 </div>
               </div>
@@ -342,25 +342,25 @@
         </section>
         
         <div class="pagination" aria-label="Навигация по страницам каталога" tabindex="0">
-          <div class="pagination-list">
-            <a href="#" class="pagination-item pagination-item-disabled arrow-left" aria-label="Перейти на предыдущую страницу">&nbsp;</a>
-            <a href="#" class="pagination-item pagination-item-current" aria-label="Первая страница">1</a>
-            <a href="#" class="pagination-item" aria-label="Вторая страница">2</a>
-            <a href="#" class="pagination-item" aria-label="Третья страница">3</a>
-            <a href="#" class="pagination-item" aria-label="Четвёртая страница">4</a>
-            <a href="#" class="pagination-item" aria-label="Пятая страница">5</a>
-            <a href="#" class="pagination-item arrow-right" aria-label="На страницу вперёд">&nbsp;</a>
-        </div>
+          <ul class="pagination-list">
+            <li><a class="pagination-item pagination-item-disabled arrow-left" aria-label="Перейти на предыдущую страницу">&nbsp;</a></li>
+            <li><a class="pagination-item pagination-item-current" aria-label="Первая страница">1</a></li>
+            <li><a href="#" class="pagination-item" aria-label="Вторая страница">2</a></li>
+            <li><a href="#" class="pagination-item" aria-label="Третья страница">3</a></li>
+            <li><a href="#" class="pagination-item" aria-label="Четвёртая страница">4</a></li>
+            <li><a href="#" class="pagination-item" aria-label="Пятая страница">5</a></li>
+            <li><a href="#" class="pagination-item arrow-right" aria-label="На страницу вперёд">&nbsp;</a></li>
+          </ul>
         </div>
         <hr class="footer-line">
       </main>
 
       <footer class="main-footer">
         <ul class="footer-social">
-          <li class="social-btn social-twi"><a href="#" aria-label="Твиттер" target="_blank"></a></li>
-          <li class="social-btn social-inst"><a href="#" aria-label="Инстаграм" target="_blank"></a></li>
-          <li class="social-btn social-fb"><a href="#" aria-label="Фейсбук" target="_blank"></a></li>
-          <li class="social-btn social-vk"><a href="#" aria-label="Вконтакте" target="_blank"></a></li>
+          <li class="social-btn social-twi"><a href="#" aria-label="Твиттер" target="_blank"><span class="visually-hidden">Твиттер</span></a></li>
+          <li class="social-btn social-inst"><a href="#" aria-label="Инстаграм" target="_blank"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li class="social-btn social-fb"><a href="#" aria-label="Фейсбук" target="_blank"></a><span class="visually-hidden">Фейсбук</span></li>
+          <li class="social-btn social-vk"><a href="#" aria-label="Вконтакте" target="_blank"></a><span class="visually-hidden">Вконтакте</span></li>
         </ul>
         <div class="links">
             <div class="links-column">
@@ -373,11 +373,10 @@
             </div>
         </div>
         <div class="copyright">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy" /></a><br>
-            <span>Сделано в <a class="copyright-link" href="#">HTML Academy</a>© 2017</span>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy" /></a>
+            <span>Сделано в <a class="copyright-link" href="#">HTML Academy</a> © 2017</span>
         </div>
       </footer>
     </div>
-    <script src="js/script.min.js"></script>
   </body>
 </html>

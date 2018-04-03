@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet"> 
   </head>
   <body>
     <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
@@ -17,7 +17,7 @@
           <nav class="main-navigation">        
             <img class="site-logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глэйси»">
             <ul class="site-navigation">
-              <li class="navigation-item">
+              <li class="navigation-item navigation-catalog-item">
                 <a class="navigation-link" href="#">Каталог</a>
                 <ul class="sub-menu">
                   <li class="sub-menu-item"><a class="sub-menu-link sub-link-first" href="#1">Новинки</a></li>
@@ -40,10 +40,10 @@
                 <a class="login-link" href="login.html">Вход</a>
                 <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
                   <input class="login-email input-field" type="email" name="email" placeholder="Электронная почта">
-                  <input class="login-password input-field" type="password" name="password" placeholder="Пароль"><br>
+                  <input class="login-password input-field" type="password" name="password" placeholder="Пароль">
                   <button class="btn enter-btn" type="submit">Войти</button>
                   <div class="login-help-wrapper">
-                    <a class="restore" href="">Забыли пароль?</a><br>
+                    <a class="restore" href="">Забыли пароль?</a>
                     <a class="registration" href="">Новая регистрация</a>
                   </div>
                 </form>
@@ -107,14 +107,14 @@
             <article class="products-item">
               <div class="product-wrapper">
                 <div class="product-contetn-wrapper">
-                  <div class="hit-icon"></div>
+                  <div class="hit-icon" title="Хит продаж"><span class="visually-hidden">Хит</span></div>
                   <img src="img/ice-cream-01.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                   <div class="products-price">
                     <span class="price-rub">310&#8381;</span><span>/кг</span>
                   </div>
-                  <div class="link-btn">
+                  <h3 class="link-btn">
                     <a class="products-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                  </div>
+                  </h3>
                   <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
                 </div>
               </div>
@@ -122,14 +122,14 @@
             <article class="products-item">
               <div class="product-wrapper">
                 <div class="product-contetn-wrapper">
-                  <div class="hit-icon"></div>
+                  <div class="hit-icon" title="Хит продаж"><span class="visually-hidden">Хит</span></div>
                   <img src="img/ice-cream-02.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                   <div class="products-price">
                     <span class="price-rub">380&#8381;</span><span>/кг</span>
                   </div>
-                  <div class="link-btn">
+                  <h3 class="link-btn">
                     <a class="products-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
-                  </div>
+                  </h3>
                   <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
                 </div>
               </div>
@@ -137,14 +137,14 @@
             <article class="products-item">
               <div class="product-wrapper">
                 <div class="product-contetn-wrapper">
-                  <div class="hit-icon"></div>
+                  <div class="hit-icon" title="Хит продаж"><span class="visually-hidden">Хит</span></div>
                   <img src="img/ice-cream-03.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                   <div class="products-price">
                     <span class="price-rub">355&#8381;</span><span>/кг</span>
                   </div>
-                  <div class="link-btn">
+                  <h3 class="link-btn">
                     <a class="products-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                  </div>
+                  </h3>
                   <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
                 </div>
               </div>
@@ -152,14 +152,14 @@
             <article class="products-item">
               <div class="product-wrapper">
                 <div class="product-contetn-wrapper">
-                  <div class="hit-icon"></div>
+                  <div class="hit-icon" title="Хит продаж"><span class="visually-hidden">Хит</span></div>
                   <img src="img/ice-cream-04.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                   <div class="products-price">
                     <span class="price-rub">415&#8381;</span><span>/кг</span>
                   </div>
-                  <div class="link-btn">
+                  <h3 class="link-btn">
                     <a class="products-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-                  </div>
+                  </h3>
                   <a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
                 </div>
               </div>
@@ -177,9 +177,7 @@
           <div class="news-subs-wrapper">
             <article class="news-blog">
               <p>Новое в нашем блоге</p>
-              <p><a href="#">10 способов сервировки<br> 
-                  фруктовых щербетов<br>
-                  к столу</a></p>
+              <p><a class="blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
             </article>
             <section class="subs">
               <form class="subs-form" action="echo.htmlacademy.ru" method="POST">
@@ -190,19 +188,21 @@
               </form>
             </section>
           </div>
+          <div class="map-iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1333.911294737451!2d30.3230367290418!3d59.93863487987092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8gMTkvOCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sby!4v1520249286339" width="100%" height="430" style="border:0" allowfullscreen></iframe>
+          </div>
           <div class="map">
-            <!-- <img src="img/map.jpg" width="1200" height="430" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"> -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1333.911294737451!2d30.3230367290418!3d59.93863487987092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8gMTkvOCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sby!4v1520249286339" width="1200" height="428" style="border:0" allowfullscreen></iframe> 
+            <img src="img/map.jpg" width="1200" height="430" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">            
             <section class="feedback">
               <h2 class="visually-hidden">Наш адрес</h2>
               <p>
-                Адрес главного офиса<br>
-                и офлайн магазина:<br>
+                <span class="adress-text">Адрес главного офиса</span>
+                и офлайн магазина:
                 <span class="adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
               </p>
               <p class="feedback-phone-time">
-                Для заказов по телефону:<br>
-                <span class="feedback-phone">8 812 450-25-25</span><br>
+                Для заказов по телефону:
+                <span class="feedback-phone">8 812 450-25-25</span>
                 (с 10 до 20 ежедневно)
               </p>
               <a class="btn feedback-btn" href="#">Форма обратной связи</a>
@@ -229,8 +229,8 @@
             </div>
           </div>
           <div class="copyright">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy" /></a><br>
-            <span>Сделано в <a class="copyright-link" href="#">HTML Academy</a>© 2017</span>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy" /></a>
+            <span>Сделано в <a class="copyright-link" href="#">HTML Academy</a> © 2017</span>
           </div>
         </footer>
         <section class="modal-feedback">
